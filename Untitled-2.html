@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color: aqua" title="my calculator">
+
+<h1 style="color: red; background-color: aquamarine ; font-style: normal, Times, serif; text-align: center;">MY CALCULATOR<h1><br>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1zcwWi3Eg_bsH1vNjmrMqpKbjYuK4SyKqsg&usqns-serp=CAU" alt="calculator">
+<br>
+<input type="text" id="number1"></input><br>
+<input type="text" id="number2"></input><br>
+<p id="result" style="color:blue;font-style: italic;font-size: 25px"></p><br><br>
+<p style="border:4px solid tomato; background-color: cadetblue; font-size: 30px; padding: 5px;">Math is beatiuful</p><br>
+<br><button onclick="topla()">TOPLAMA</button>
+<button onclick="cikarma()">CIKARMA</button>
+<button onclick="carpma()">CARPMA</button>
+<button onclick="bolme()">BOLME</button><br><br>
+<img src="https://m.media-amazon.com/images/I/51apVvRM1wL.jpg" alt="archimed" usemap="#tnr"></a>
+<map name="tnr">
+    <area shape="rect" coords="34, 44, 270, 350" href="https://www.google.com.tr">
+</map>
+<script>
+    function topla(){
+        var number1 = document.getElementById('number1').value;
+        var number2 = document.getElementById('number2').value;
+        document.getElementById('result').innerHTML = '<mark>sonuc:<mark>' + (parseInt(number1)+parseInt(number2));
+    }
+    function cikarma(){
+        var number1 = document.getElementById('number1').value;
+        var number2 = document.getElementById('number2').value;
+        document.getElementById('result').innerHTML = '<del>sonuc:<del>' +(parseInt(number1)-parseInt(number2));
+    }
+    function carpma(){
+        var number1 = document.getElementById('number1').value;
+        var number2 = document.getElementById('number2').value;
+        document.getElementById('result').innerHTML = '<sup><ins>sonuc:<ins><sup>' +(parseInt(number1)*parseInt(number2));
+    }
+    function bolme(){
+        var number1 = document.getElementById('number1').value;
+        var number2 = document.getElementById('number2').value;
+        document.getElementById('result').innerHTML = 'result <sub>sonuc:</sub> result'  +(parseInt(number1)/parseInt(number2));
+    }
+
+</Script>
+</body>    
+
+
+</html>
+
+
