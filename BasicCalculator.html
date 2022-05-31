@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <style>
+
+
+    </style>
+    <script>
+
+        $(document).ready(function () {
+
+            $(".number1").on({
+                focus: function () {
+                    $(".number1").css("background-color", "orange");
+                },
+                blur: function () {
+                    $(".number1").css("background-color", "yellow");
+                },
+
+            });
+            $(".number2").on({
+                focus: function () {
+                    $(".number2").css("background-color", "orange");
+                },
+                blur: function () {
+                    $(".number2").css("background-color", "yellow");
+                },
+
+            });
+
+            $(".topla").click(function () {
+                var num1 = parseInt($(".number1").val());
+                var num2 = parseInt($(".number2").val());
+
+                $(".result").text("Çikarma sonucu : " + (num1 + num2)).css("color", "black");;
+
+            })
+            $(".cikarma").click(function () {
+                var num1 = parseInt($(".number1").val());
+                var num2 = parseInt($(".number2").val());
+                var result = num1 - num2;
+                $(".result").css("default");
+                if (result >= 0)
+
+                    $(".result").text("Çikarma sonucu : " + result).css("color", "black");
+
+                else
+                    $(".result").text("Çikarma sonucu : " + result).css("color", "red");
+
+            })
+            $(".bolme").click(function () {
+                var num1 = parseInt($(".number1").val());
+                var num2 = parseInt($(".number2").val());
+
+                $(".result").text("Çikarma sonucu : " + (num1 / num2)).css("color", "black");;
+            })
+            $(".carpma").click(function () {
+                var num1 = parseInt($(".number1").val());
+                var num2 = parseInt($(".number2").val());
+
+                $(".result").text("Çarpma sonucu : " + (num1 * num2)).css("color", "black");
+            })
+
+
+        });
+    </script>
+
+</head>
+
+<body>
+    <h1 style="text-align: center;"> Basic Calculator </h1>
+    <p style="text-align: center;" class="ilk"> İLK SAYİYİ GİRİNİZ: <input class="number1"></input> </p>
+    <p style="text-align: center;" class="ikinci"> İKİNCİ SAYİYİ GİRİNİZ: <input class="number2"></input> </p>
+    <div style="text-align: center;">
+        <button class="topla">Toplama</button>
+        <button class="cikarma">Cikarma</button>
+        <button class="bolme">Bolme</button>
+        <button class="carpma">Carpma</button>
+    </div>
+    <img  src="https://u7.uidownload.com/vector/935/23/vector-free-math-vectors-ai.jpg" style="width: 60px; height: 60px; position: fixed; top: 150px; transform: rotate(30deg);" >
+    <img  src="https://u7.uidownload.com/vector/935/23/vector-free-math-vectors-ai.jpg" style="width: 90px; height: 90px; position: fixed; top: 300px;left: 70px; transform: rotate(-45deg);" >
+    <img  src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh63iiLuVimINmZ3yAHoBFriLNvzDZspfIIMlzxLuNWSZpCRWZwUUC4ZtfVc2sMC-rhlQ&usqp=CAU" style="width: 190px; height: 190px; position: fixed; bottom: 300px;right: 500px; transform: rotate(30deg);" >
+    <img  src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh63iiLuVimINmZ3yAHoBFriLNvzDZspfIIMlzxLuNWSZpCRWZwUUC4ZtfVc2sMC-rhlQ&usqp=CAU" style="width: 120px; height: 120px; position: fixed; bottom: 300px;left: 500px; transform: rotate(30deg);" >
+    <p class="result" style="text-align: center;"></p>
+
+
+</body>
+
+<html>
+
+
+
+
