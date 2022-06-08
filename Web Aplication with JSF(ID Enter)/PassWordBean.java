@@ -51,7 +51,7 @@ public class PassWordBean {
 
     public boolean control() {
 
-        if (ps.getPassword().length() >= 8) {
+        if (ps.getPassword().length() == 11) {
             ps.setPassLen(ps.getPassword());
             return true;
         }
