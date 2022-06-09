@@ -15,7 +15,7 @@
     <p:outputLabel value="TC Girin:" /><br />
     <p:password id="Password" value="#{passWordBean.ps.password}" /><br/>
     <p:commandButton
-            rendered="#{passWordBean.ps.passLen lt 8 }"
+            rendered="#{passWordBean.ps.passLen ne 11 }"
             value="Ekle" id="addButton"
             update="formId Output1"
             action="#{passWordBean.addPassword()}"
