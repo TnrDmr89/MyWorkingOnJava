@@ -1,0 +1,3 @@
+
+SpringBoot üzerinde yaptığım çalışmada bir web servis çıkarak kullanıcının isim,soyisim ve yaş bilgilerini alarak
+postgreSQL üzerine kayıt ediyorum ve DB üzerinde bilgileri filtreyerek çıktığım web servislere filtreli bilgileri dönüyorum.
