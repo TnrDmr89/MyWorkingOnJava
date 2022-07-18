@@ -65,4 +65,9 @@ public class PersonServiceImp implements PersonService {
         return personDTOList;
     }
 
+    @Override
+    public int takeRegisteredPersonAtDB() {
+        return personRepository.totalRegisteredPersonAtDB();
+    }
+
 }

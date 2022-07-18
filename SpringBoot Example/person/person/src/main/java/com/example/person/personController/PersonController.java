@@ -40,6 +40,11 @@ public class PersonController {
         return personService.takePersonWithAgeBetween18and32(18,32);
     }
 
+    @GetMapping("/takeRegisterPerson")
+    public int takeRegisteredPersonAtDB(){
+        return personService.takeRegisteredPersonAtDB();
+    }
+
 
 
 }

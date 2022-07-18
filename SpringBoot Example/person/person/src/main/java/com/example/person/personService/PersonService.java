@@ -9,4 +9,6 @@ public interface PersonService {
     void addPersons(List<PersonDTO> personDTOList);
     PersonDTO takePersonWithId(Long id);
     List<PersonDTO> takePersonWithAgeBetween18and32(int start,int end);
+    int takeRegisteredPersonAtDB();
+
 }
